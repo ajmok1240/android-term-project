@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/main_icon"
+        android:label="등산길"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- EditText 키보드 자동실행 막기 -->
+        <activity
+            android:name=".mountain"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Main_Tap" />
+        <activity android:name=".Edit" />
+        <activity android:name=".User" />
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
